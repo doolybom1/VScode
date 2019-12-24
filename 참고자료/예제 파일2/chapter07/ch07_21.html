@@ -1,0 +1,24 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Untitled Document</title>
+</head>
+
+<body>
+	<a name="html">HTML Tutorial</a><br>
+	<a name="css">CSS Tutorial</a><br>
+	<a name="xml">XML Tutorial</a><br>
+	<button onclick="myFunction()">Try it</button>
+	<p id="demo01"></p>
+    <p id="demo02"></p>
+<script>
+	function myFunction() {
+    	var x = document.anchors.length;
+	    document.getElementById("demo01").innerHTML = "anchors.length="+x;
+		var y = document.anchors[0].innerHTML;
+	    document.getElementById("demo02").innerHTML = "anchors[0].innerHTML="+y;
+	}
+</script>
+</body>
+</html>

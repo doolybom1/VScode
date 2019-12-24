@@ -1,0 +1,30 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Untitled Document</title>
+</head>
+
+<body>
+	<p>The best program is  javaScript...!</p>
+<script>
+	var str01 = "ab";
+	var str02 = "abc";
+	var str03 = "abccc";
+	var ptn01=/abc+/ig;
+    document.write("<b>1. ab : </b>" + str01.match(ptn01)+"<br>");
+	document.write("<b>2. abc : </b>" + str02.match(ptn01)+"<br>");
+	document.write("<b>3. abccc : </b>" + str03.match(ptn01)+"<br>"+"<br>");
+	var ptn02=/abc*/ig;
+    document.write("<b>4. ab : </b>" + str01.match(ptn02)+"<br>");
+	document.write("<b>5. abc : </b>" + str02.match(ptn02)+"<br>");
+	document.write("<b>6. abc : </b>" + str03.match(ptn02)+"<br>"+"<br>");
+	var ptn03=/abc?/ig;
+    document.write("<b>7. ab : </b>" + str01.match(ptn03)+"<br>");
+	document.write("<b>8. abc : </b>" + str02.match(ptn03)+"<br>");	
+	document.write("<b>9. abccc : </b>" + str03.match(ptn03));		
+</script>
+
+
+</body>
+</html>

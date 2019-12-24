@@ -1,0 +1,33 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Untitled Document</title>
+</head>
+
+<body>
+<script>
+	function Car(model, speed, color) {
+		this.model = model;
+		this.speed = speed;
+		this.color = color;
+		this.bbreak=function(){
+			this.speed -=10;
+		};
+		this.accel = function() {
+		this.speed +=10;
+		};
+	}
+	myCar = new Car("BMW", 100, "black");
+	yourCar = new Car("Benz", 150, "Gray");
+	myCar.blackBox = true;
+	myCar.battery = 1200;
+	myCar.display = function(){
+		alert("myCar의 베터리 양 ... : " + this.battery);
+	}
+	myCar.display();
+	document.write("내 차의 블랙박스 : " + myCar.blackBox + " 배터리 : "+ myCar.battery + 
+				   "<br>");
+</script>
+</body>
+</html>

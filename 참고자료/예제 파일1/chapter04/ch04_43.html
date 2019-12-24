@@ -1,0 +1,27 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Untitled Document</title>
+</head>
+
+<body>
+<script>
+	var str01 ="자바스크립트";
+	var str02 ="JavaScript";
+	var num01 = 123456 ;
+	encode_str01 = escape(str01);
+	encode_str02 = escape(str02);
+	encode_num01 = escape(num01);
+	document.write("자바스크립트 인코딩... : "+encode_str01+"<br>"); 
+	document.write("javaScript 인코딩... : "+encode_str02+"<br>"); 
+	document.write("123456 인코딩... : "+encode_num01+"<br>"); 
+	decode_str01=unescape(encode_str01) ;
+	decode_str02=unescape(encode_str02) ; 
+	decode_num01=unescape(encode_num01) ; 
+	document.write("자바스크립트 디코딩... : "+decode_str01+"<br>"); 
+	document.write("javaScript 디코딩... : "+decode_str02+"<br>"); 
+	document.write("123456 디코딩... : "+decode_num01); 
+</script>
+</body>
+</html>

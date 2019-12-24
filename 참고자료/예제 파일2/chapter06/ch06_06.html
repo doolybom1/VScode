@@ -1,0 +1,19 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Window Size</title>
+</head>
+
+<body>
+	<button onclick="myFunction()">Try it</button>
+	<iframe src="https://www.w3schools.com"></iframe>
+	<iframe src="http://www.daum.net"></iframe>
+<script>
+function myFunction(){
+    window.frames[1].location = "https://www.google.com";
+}
+    document.write("<br><b>window.length : </b>" + window.length);
+</script>
+</body>
+</html>

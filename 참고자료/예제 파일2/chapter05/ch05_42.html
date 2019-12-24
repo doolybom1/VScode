@@ -1,0 +1,19 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Untitled Document</title>
+</head>
+
+<body>
+	<p>Date.parse() returns the number of milliseconds or strings</p>
+<script>
+	var millsec = Date.parse("july 13, 2015");
+	document.write(millsec+"<br>");
+	var string_Date = new Date(millsec);
+	document.write(string_Date+"<br>");
+	var cursec = Date.now("july 13, 2017");
+	document.write(cursec);
+</script>
+</body>
+</html>

@@ -1,0 +1,37 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Untitled Document</title>
+</head>
+<body>
+	<p>Please input a number between 5 and 10:</p>
+	<input id="demo" type="text">
+	<button type="button" onclick="myFunction()">Test Input</button>
+	<p id="message"></p>
+<script>
+	function myFunction() {
+		var msg;
+	    var x = document.getElementById("demo").value;
+	    try { 
+	        if(x == "")  throw "is empty";
+	        if(isNaN(x)) throw "is not a number";
+	        x = Number(x);
+	        if(x > 10)   throw "is too high";
+				else if(x < 5)    throw "is too low";
+	    }
+	    catch(err) {
+	        msg=err;
+	    }
+	    finally {
+			if(msg==undefined)
+				document.getElementById("message").innerHTML = "Good Data";
+				else
+	        		msg=document.getElementById("message").innerHTML = "Input " + msg;
+	    }
+	}
+</script>
+
+
+</body>
+</html>

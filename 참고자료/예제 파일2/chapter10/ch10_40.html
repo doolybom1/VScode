@@ -1,0 +1,34 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Untitled Document</title>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+<script>
+	$(document).ready(function(){
+	    $("span").click(function(event){
+	        event.stopPropagation();
+			alert("Was event.stopPropagation() called: " +  event.isPropagationStopped());
+	        alert("The span element was clicked.");
+	    });
+	    $("p").click(function(event){
+	        alert("The p element was clicked.");
+	    });
+	    $("div").click(function(){
+	        alert("The div element was clicked.");
+	    });
+	});
+</script>
+</head>
+<body>
+	<div style="height:100px;border:1px solid blue;background-color:lightblue;">
+	This is a div element.
+		<p style="background-color:pink">p element(in the div element)
+        	<span style="background-color:yellow"><br />a span element.</span>
+         </p>
+	</div>
+	<p>the parent elements. </p>
+	<p>now bubble up to parent elements.</p>
+
+</body>
+</html>

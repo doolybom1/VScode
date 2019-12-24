@@ -1,0 +1,27 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Untitled Document</title>
+</head>
+<body>
+	<p>Replace "java" is replaced by "javaScript".</p>
+	<button onclick="myFunction()">Try it</button>
+	<p id="demo01"></p>
+	<p id="demo02"></p>
+   	<p id="demo03"></p>
+<script>
+	function myFunction() {
+	    var str = "This program is written by java. java is the best program."; 
+	    var txt = str.replace("JAVA","javaScript");
+	    document.getElementById("demo01").innerHTML = txt;
+	    var txt = str.replace(/java/i,"javaScript");
+	    document.getElementById("demo02").innerHTML = txt;
+	    var txt = str.replace(/java/ig,"javaScript");
+	    document.getElementById("demo03").innerHTML = txt;		
+	}
+</script>
+
+</body>
+
+</html>

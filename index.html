@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <title>Page Title</title>
+</head>
+
+<body>
+    <h2>What Can JavaScript Do?</h2>
+    <p id="demo">JavaScript can change HTML content.</p>
+    <button type="button" onclick="document.getElementById('demo').innerHTML = 'Hello JavaScript!'">Click
+        me</button><br />
+
+    <button type="button" onclick="document.getElementById('myImage').src='images/pic_bulbon.jpg'" width="100px" >Turn on the
+        light</button>
+    <img id="myImage" src="images/pic_bulboff.jpg" width="100px">
+    <button type="button" onclick="document.getElementById('myImage').src='images/pic_bulboff.jpg'" width="100px">Turn off the
+        light</button>
+
+    <p id="colorChange">JavaScript can change the HTML style</p>
+    <button type="button" onclick="document.getElementById('colorChange').style.color='yellow'">Click me</button>
+
+    <p id="hide">JavaScript can change the HTML style</p>
+    <button type="button" onclick="document.getElementById('hide').style.display='none'">Click me</button>
+
+    <p>버튼을 클릭했을 때 숨김된 text가 보임</p>
+    <p id="show" style="display: none">Hello JavaScript!</p>
+    <button type="button" onclick="document.getElementById('show').style.display='block'">click me</button>
+
+
+    
+
+
+
+</body>
+
+</html>

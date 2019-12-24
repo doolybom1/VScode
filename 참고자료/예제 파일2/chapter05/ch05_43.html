@@ -1,0 +1,25 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Untitled Document</title>
+</head>
+
+<body>
+	<p>---대여 기간의 경과일 산정---</p>
+<script>
+	var today, someday, text;
+	today = new Date();
+	someday = new Date();
+	someday.setFullYear(2017, 0, 14);
+	if (someday > today) {
+	    text = "Today is before January 14, 2017.";
+	} else {
+	    text = "Today is after January 14, 2017.";
+		var diff = today.getTime() - someday.getTime();
+		var del_Day = diff/(1000*24*60*60);
+		document.write(text + "<br>" + del_Day);
+	}
+</script>
+</body>
+</html>

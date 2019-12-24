@@ -1,0 +1,26 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Untitled Document</title>
+</head>
+
+<body>
+	<h2> Using prototypes...</h2>
+<script>
+	function Car(m, s, c){
+		this.model = m;
+		this.speed = s;
+		this.color = c;
+	}
+	Car.prototype.speedUp = function(){
+			this.speed += 20;
+			return this.speed;
+	}	
+	var myCar = new Car("BMW", 100, "Black");  
+	var yourCar = new Car("Benz", 90, "White");  
+	document.write("<b>myCar.speedUp() : </b>" + myCar.speedUp()+"<br>");
+	document.write("<b>yourCar.speedUp() : </b>" + yourCar.speedUp());
+</script>
+</body>
+</html>

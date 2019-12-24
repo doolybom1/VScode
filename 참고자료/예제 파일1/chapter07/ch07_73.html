@@ -1,0 +1,21 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Untitled Document</title>
+
+</head>
+<body>
+	<p id="str">Search a string, and display the position of the match:</p>
+	<button onclick="myFunction()">Try it</button>
+	<p id="demo"></p>
+<script>
+	function myFunction() {
+	    var target =  document.getElementById("str").innerHTML; 
+	    var n = target.search(/string/i);
+	    document.getElementById("demo").innerHTML = n;
+}
+</script>
+
+</body>
+</html>

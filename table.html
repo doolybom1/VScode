@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset='utf-8'>
+        <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+        <title>Page Title</title>
+        <meta name='viewport' content='width=device-width, initial-scale=1'>
+    </head>
+    <style>
+        table{
+            /*border-collapse: collapse;
+            border-spacing: 0;*/
+            width: 100%;
+            border:3px solid blue;
+            
+        }
+        table tr{
+            border:1px dotted red;
+        }
+
+        table tr:hover{
+            background-color: green;
+            cursor: pointer;
+        }
+    </style>
+    <body>
+        <table border="1">
+            <tr>
+                <td>번호</td>
+                <td>이름</td>
+                <td>학과</td>
+            </tr>
+            <tr>
+                <td>001</td>
+                <td>정민sadkfjds;findsf;odsinfsdoifnasdfoiasdbhfos[duhfofusdbhofusdbf;sdifusdbnfosdu;</td>
+                <td>무</td>
+                <td rowspan="3">3</td>
+            </tr>
+
+            <tr>
+                <td>002</td>
+                <td>제원</td>
+                <td>무</td>
+            </tr>
+            <tr>
+                <td>003</td>
+                <td>이몽룡</td>
+                <td>무</td>
+                <td rowspan="3">3</td>
+            </tr>
+            <tr>
+                <td colspan="2">002</td>
+            </tr>
+            <tr>
+                <td colspan="3">003</td>
+            </tr>
+            <tr>
+                <td colspan="4">004</td>
+            </tr>
+
+            <tr>
+                <td colspan="5">005</td>
+            </tr>
+            <tr>
+                <td colspan="4">
+                    <table>
+                        <tr>
+                            <td>1</td>
+                            <td>2</td>
+                            <td>3</td>
+                            <td>4</td>
+                            <td>5</td>
+                        </tr>
+                    </table>
+
+                </td>
+            </tr>
+
+        </table>
+    </body>
+</html>

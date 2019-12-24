@@ -1,0 +1,24 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Untitled Document</title>
+</head>
+<body>
+<script>
+	var num01 = 123/0;               
+	var num02 = 123/-0;             
+	var num03 = 123;             
+	var num04 = "123"; 
+	var num05 = 0/0; 
+	document.write("num01 = 123/0 ; " + isFinite(num01)+"<br>");
+	document.write("num02 = 123/-0 ; " + isFinite(num02)+"<br>");
+	document.write("num03 = 123 ; " + isFinite(num03)+"<br>");
+	document.write("num04 = '123' ; " + isFinite(num04)+"<br>");
+	document.write("num05 = 0/0 ; " + isFinite(num05)+"<br>"+"<br>");
+	document.write("num03 = 123 ; " + isNaN(num03)+"<br>");
+	document.write("num04 = '123' ; " + isNaN(num04)+"<br>");
+	document.write("num05 = 0/0 ; " + isNaN(num05));	
+</script>
+</body>
+</html>

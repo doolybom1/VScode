@@ -1,0 +1,27 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Untitled Document</title>
+</head>
+
+<body>
+	<img src="hydrangeas.jpg" alt="hydrangeas" width="100" height="100">
+	<img src="koala.jpg" alt="koala" width="100" height="100">
+	<img id="myimg" src="penguins.jpg" alt="penguins" width="100" height="100">
+	<button onclick="myFunction()">Try it</button>
+	<p id="demo01"></p>
+    <p id="demo02"></p>
+    <p id="demo03"></p>
+<script>
+	function myFunction() {
+	    var x = document.images.length;
+	    document.getElementById("demo01").innerHTML = "images.length = "+x;
+		var y = document.images[0].src;
+	    document.getElementById("demo02").innerHTML = y;
+		var z = document.images.namedItem("myImg").src;
+	    document.getElementById("demo03").innerHTML = z;
+	}
+</script>
+</body>
+</html>

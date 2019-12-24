@@ -1,0 +1,25 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Untitled Document</title>
+</head>
+
+<body>
+	<p>The best program is  javaScript and HTML5...!</p>
+<script>
+	var str = "The best program isjavaScript and HTML5...!";
+	var ptn01=/javascript/ig;
+    document.write(str.match(ptn01)+"<br>");
+	var ptn02=/[prjava]/ig;
+    document.write(str.match(ptn02)+"<br>");
+	var ptn03=/[A-K]/ig;
+    document.write(str.match(ptn03)+"<br>");	
+	var ptn04=/[0-9]/ig;
+    document.write(str.match(ptn04)+"<br>");	
+	var ptn05=/p|x|z/ig;
+    document.write(str.match(ptn05)+"<br>");	
+</script>
+
+</body>
+</html>

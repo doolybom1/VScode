@@ -1,0 +1,23 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Untitled Document</title>
+<script>
+	function count(x) {
+		if(x==0) 
+			document.write("함수 실행종료..");
+		else {
+			document.write("함수 'count'가 호출될 때의 x 값 : " +x+"<br>");
+			count(x-1);
+		}
+	}
+</script>
+</head>
+<body>
+	<h2> 재귀함수(자신을 호출) </h2> 
+<script>
+	count(5);
+</script>
+</body>
+</html>

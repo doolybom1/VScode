@@ -1,0 +1,33 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Untitled Document</title>
+</head>
+
+<body>
+	<h2>---Total Survival---</h2>
+   	<form>
+		생년월일 : Year : <input id="year"></input> 
+		Month : <input id="month"></input>
+		Day :  <input id="day"></input><br />
+        <button type="button" onclick="survivalCalc()" >계산 </button><br />
+		살아온 날 수 : <p id = "survlval"></p>
+	</form>
+<script>
+	function survivalCalc() {
+		var today = new Date();
+		var both_year = parseInt(document.getElementById("year").value);
+		var both_month = parseInt(document.getElementById("month").value);
+		var both_day = parseInt(document.getElementById("day").value);
+		var myBoth = new Date();
+		myBoth.setFullYear(both_year, both_month, both_day);
+		today_Mili = Date.parse(today);
+		both_Mili  = Date.parse(myBoth);
+		survlval_Mili = today_Mili - both_Mili;
+		survlval_Day = survlval_Mili / 1000 / 60/ 60 / 24 ;
+		document.getElementById("survlval").innerHTML = survlval_Day;
+	}
+</script>
+</body>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Untitled Document</title>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+<script>
+	function changeFontColor() {
+	    $(this).css("color", "green");;
+	}
+	function changeBackgroundColor() {
+	    $(this).css("background-color", "orange");;
+	}
+	$(document).ready(function(){
+	    $("body").on("click", "p", changeFontColor);
+	    $("body").on("click", "p", changeBackgroundColor);
+	    $("button").click(function(){
+	        $("body").off("click", "p");
+	    });
+	});
+</script>
+</head>
+<body>
+	<p>This is a paragraph.</p>
+	<p>This is another paragraph.</p>
+	<p>Click any p element to increase size and letterspacing.</p>
+	<button>Remove all click event handlers</button>
+</body>
+
+</html>

@@ -1,0 +1,24 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Untitled Document</title>
+</head>
+
+<body>
+<script>
+	var objectExam = {
+//속성 
+		name : '박성배',
+		age  : 23,
+//메서드
+		sayHello : function(blogName) {
+			alert(this.name + '의 ' + blogName);
+		}
+	};
+	objectExam.sayHello('정보 보기');
+	document.write("이름 : " + objectExam.name + " ");
+	document.write("나이 : " + objectExam.age);
+</script>
+</body>
+</html>

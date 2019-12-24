@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+    <style>
+        p{
+            font-size: 30px;
+        }
+        span[data-dc]{
+            position: relative;
+            text-decoration: underline;
+            color: blue;
+            cursor: help;
+        }
+        /* ::after */
+        /* 마치 span[data-dc] tag앞(befor) 뒤(after)에 box tag가 하나 있는것처럼 어떤 content를 표시하기
+            content에 어떠한 값(최소한 "")이 들어있어야 동작한다 */
+        span[data-dc]:hover:after{
+            content: attr(data-dc);
+            position: absolute;
+            left: 0;
+            top: 35px;
+            min-width: 200px;
+            border: 1px solid #aaa;
+            border-radius: 10px;
+            background-color: #ffffcc;
+            padding: 12px;
+            columns: #000000;
+            font-size: 20px;
+            z-index: 3;
+
+        }
+    </style>
+ </head>
+<body>
+        <p>로렌 <span data-dc="rolen의 줄임말">로렌로렌 </span>이상해 <span data-dc="나도몰라">입숨</span>의 글은 명언들만 가득하다</p>
+</body>
+</html>

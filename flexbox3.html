@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset='utf-8'>
+        <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+        <title>Page Title</title>
+        <meta name='viewport' content='width=device-width, initial-scale=1'>
+        <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+        <script src='main.js'></script>
+
+    <style>
+    *,html,body{
+        margin: 0;
+        padding: 0;
+    }
+    /*
+        PC환경에서 다양한 모니터 해상도 때문에 메뉴들이 흐트러지는 현상이 자주 발생한다.
+        PC환경에서 width 값을 고정하여 페이지를 구성한다
+        PC: 978px, 1200px 를 고정해서 사용하는 추세
+    */
+
+    html{
+        height: 100%;
+    }
+
+    body{
+        width: 80;
+
+        /* y축 height는 전체화면으로 보이되 content가 가득차면 자동으로 scroll을 보여라 */
+        overflow-y: auto;
+        height: 100%;
+        border: 1px solid gray;
+        margin: 0 auto;
+        margin-left:auto;
+    }
+    </style>
+    </head>
+
+    <body>
+        <style>
+            div.m-box{
+                border: 2px solid blue;
+                width: 80%;
+                margin: 30px auto;
+                display: flex;
+                flex-direction: row; 
+
+                /* direction과 wrap을 한꺼번에 지정할 때 사용*/
+                flex-flow: row wrap;
+                
+                /*
+                    기본값 : nowrap
+                    컨테이너의 폭이 변동되면 item의 폭을 조절하여 한 라인에 있도록 배치
+
+                    wrap
+                    컨테이너의 폭이 변동되면 item을 줄바꿈하여 여러 라인에 배치
+                */
+                flex-wrap: wrap;
+
+            }
+            div.s-box{
+                border: 1px solid red;
+                width: 100px;
+                margin: 20px; 
+            }
+            div#d-1{
+                /* item에 지정된 flex item들을 배치할때 어떤 비율로 표시할 것인가를 지정 
+                    
+                    기본값 auto
+                    자동으로 배율을 조절
+                    flex 값을 지정하지 않으면 item들이 모두 같은 비율로 지정
+                */
+
+                flex:1;
+            }
+
+            div#d-2{
+                /* flex : flex-grow flex-shrink flex basic 
+                    flex-grow : 내용값에 따라 항목 크기를 크게 할 것인가?
+                    flex-shrink : 내용값이 없으면 항목크기를 줄일 것인가?
+                    flex-basic: 크기를 줄이거나 늘릴때 어떤 기준으로 설정할 것인가?
+                    flex : 0 1 auto;
+                    모든 flex 항목들을 basic 값보다 크지 않게 지정
+
+                    flex : auto
+                    => flex : 1 1 auto;
+                    주축방향(row)으로 여유가 있으면 항목들을 늘리고 여유공간만큼 채워서 표현하라
+
+                    flex : none
+                    => flex : 0 0 auto
+                    각 항목의 크기를 자동으로 변경하지 말고 동일한 크기로 지정하라
+                */
+
+                flex:2;
+                flex-grow: 1;
+                flex-shrink: 1;
+                flex-basis: auto;
+                flex: 1 1 auto;
+
+            }
+
+            div#d-3{
+                flex:3;
+                flex: 1 1 200px;
+            }
+
+            div#m-box2{
+                height: 500px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+        </style>        
+        <div class="m-box">
+            <div class="s-box" id="d-1">box item 1</div>
+            <div class="s-box" id="d-2">box item 2</div>
+            <div class="s-box" id="d-3">box item 3</div>
+            <div class="s-box" id="d-4">box item 4</div>
+            <div class="s-box" id="d-5">box item 5</div>
+        </div>
+
+        <div class="m-box" id="m-box2">
+            <div class="s-box" id="s-1">sub box</div>
+
+        </div>
+
+    </body>
+</html>

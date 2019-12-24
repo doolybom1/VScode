@@ -1,0 +1,54 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Untitled Document</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">
+<script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+<script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+</head>
+<body>
+	<div data-role="page">
+		<div data-role="header">
+		    <h1>Welcome To My Homepage</h1>
+		</div>
+		<a href="#myPopup" data-rel="popup" class="ui-btn ui-btn-inline ui-corner-all">
+            	Show Popup</a>
+		<div id="myPopup" data-role="popup" data-theme="none">
+		    <div style="margin: 0px; width: 250px;" data-role="collapsibleset" data-theme="b" 
+            data-expanded-icon="arrow-d" data-collapsed-icon="arrow-r" data-content-theme="a">
+        	<div data-role="collapsible" data-inset="false">
+		        <h2>Farm animals</h2>
+		        <ul data-role="listview">
+		            <li><a href="#" data-rel="dialog">Chicken</a></li>
+		            <li><a href="#" data-rel="dialog">Cow</a></li>
+		            <li><a href="#" data-rel="dialog">Duck</a></li>
+		            <li><a href="#" data-rel="dialog">Sheep</a></li>
+		        </ul>
+        	</div><!-- /collapsible -->
+        	<div data-role="collapsible" data-inset="false">
+		        <h2>Pets</h2>
+	            <ul data-role="listview">
+    	            <li><a href="#" data-rel="dialog">Cat</a></li>
+	                <li><a href="#" data-rel="dialog">Dog</a></li>
+	                <li><a href="#" data-rel="dialog">Iguana</a></li>
+	                <li><a href="#" data-rel="dialog">Mouse</a></li>
+	            </ul>
+	        </div><!-- /collapsible -->
+    	    <div data-role="collapsible" data-inset="false">
+		        <h2>Ocean Creatures</h2>
+	            <ul data-role="listview">
+	                <li><a href="#" data-rel="dialog">Fish</a></li>
+	                <li><a href="#" data-rel="dialog">Octopus</a></li>
+	                <li><a href="#" data-rel="dialog">Shark</a></li>
+    	            <li><a href="#" data-rel="dialog">Starfish</a></li>
+        	    </ul>
+    	    </div><!-- /collapsible -->
+		</div><!-- /popup -->
+		<div data-role="footer">
+		    <h1>Footer Text</h1>
+		</div>
+	</div> 
+</body>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Untitled Document</title>
+</head>
+<body>
+	<h2>JavaScript String Methods</h2>
+<script>
+	var str01 = "JavaScript objects are containers for named values, called properties and methods.";
+	var position01 = str01.indexOf("containers",15);
+	document.write("1. indexOf('containers',15) : " + position01 +"<br>");
+	var position02 = str01.search("containers");
+	document.write("2. search('containers') : " + position02 +"<br>");
+	var result01 = str01.slice(7,13);
+	document.write("3. slice(7,13) : " + result01 +"<br>"); 
+	var result02 = str01.slice(-12,-6);
+	document.write("4. slice(-12,-6) : " + result02 +"<br>");
+	var result03 = str01.slice(7);
+	document.write("5. slice(7) : " + result03 +"<br>");
+	var result04 = str01.slice(-12) ;
+	document.write("6. slice(-12) : " + result04 +"<br>");
+	var result05 = str01.substring(7,13);
+	document.write("7. substring(7,13) : " + result05 +"<br>");
+	var result06 = str01.substr(7,6);
+	document.write("8. substr(7,6) : " + result06 +"<br>");
+	</script>
+
+</body>
+
+</html>

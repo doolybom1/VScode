@@ -1,0 +1,31 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Untitled Document</title>
+</head>
+
+<body>
+	<h2> Add of Properties in prototypes...</h2>
+<script>
+	function Car(m, s, c){
+		this.model = m;
+		this.speed = s;
+		this.color = c;
+		this.speedUp = function (){
+			this.speed += 10;
+  			return this.speed; 
+		};
+	}
+	var myCar = new Car("BMW", 100, "Black");  
+	myCar.battery=true;
+	myCar.speedUp = function (){
+		this.speed += 20;
+		return this.speed;
+	};
+	document.write("<b>Speed of myCar : </b>" + myCar.speedUp()+"<br>");     
+	myCar.model = "HyunDae";
+	document.write("<b>Model of myCar : </b>" + myCar.model); 
+</script>
+</body>
+</html>

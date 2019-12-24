@@ -1,0 +1,32 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Untitled Document</title>
+</head>
+
+<body>
+	<p>The best program is  javaScript...!</p>
+<script>
+	var str = "The best program isjavaScript and HTML5..!";
+	var ptn01=/^j/ig;
+    document.write("<b>1. </b>" + str.match(ptn01)+"<br>");
+	var ptn02=/!$/ig;
+    document.write("<b>2. </b>" + str.match(ptn02)+"<br>");
+	var ptn03=/\w/ig;
+    document.write("<b>3. </b>" + str.match(ptn03)+"<br>");	
+	var ptn04=/\W/ig;
+    document.write("<b>4. </b>" + str.match(ptn04)+"<br>");	
+	var ptn05=/\d/ig;
+    document.write("<b>5. </b>" + str.match(ptn05)+"<br>");	
+	var ptn06=/\D/ig;
+    document.write("<b>6. </b>" + str.match(ptn06)+"<br>");	
+	var ptn07=/\s/ig;
+    document.write("<b>7. </b>" + str.match(ptn07)+"<br>");
+	var ptn08=/\S/ig;
+    document.write("<b>8. </b>" + str.match(ptn08));	
+</script>
+
+
+</body>
+</html>

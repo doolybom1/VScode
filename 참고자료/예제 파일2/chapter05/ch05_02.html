@@ -1,0 +1,31 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Untitled Document</title>
+</head>
+
+<body>
+<script>
+	var star = { 
+		color : 'red',
+		max_diameter : 30,
+		min_diameter : 10,
+		max_radius : function() {
+			var max_x=this.max_diameter/2;
+			return max_x;
+		},
+		min_radius : function() {
+			var min_x=this.min_diameter/2;
+			return min_x;
+		}		
+	};
+	star.color='blue';
+	document.write("별의 색상 : " + star.color + "<br>");
+	document.write("별의 바깥 둘레 : " + star.max_diameter + "<br>");
+	document.write("별의 바깥 둘레 반지름 : " + star.max_radius() + "<br>");	
+	document.write("별의 안쪽 둘레 : " + star.min_diameter + "<br>");
+	document.write("별의 안쪽 둘레 반지름 : " + star.min_radius() + "<br>");	
+</script>
+</body>
+</html>

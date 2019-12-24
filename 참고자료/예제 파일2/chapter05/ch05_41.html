@@ -1,0 +1,30 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Untitled Document</title>
+</head>
+
+<body>
+	<p>Examples of Set Method...</p>
+<script>
+	var thisDay = new Date();
+	thisDay.setFullYear(2018, 5, 06);
+	document.write("setFullYear() 메서드  : " + thisDay+"<br>");
+	thisDay.setDate(20);
+	document.write("setDate() 메서드  : " + thisDay+"<br>");
+	thisDay.setDate(thisDay.getDate() + 50);
+	document.write("setDate() 메서드  : " + thisDay+"<br>");
+	thisDay.setHours(15);
+	document.write("setHours() 메서드  : " + thisDay+"<br>");
+	thisDay.setMilliseconds(2345);
+	document.write("setMilliseconds() 메서드  : " + thisDay+"<br>");
+	thisDay.setMinutes(34);
+	document.write("setMinutes() 메서드  : " + thisDay+"<br>");
+	thisDay.setMonth(7);
+	document.write("setMonth() 메서드  : " + thisDay+"<br>");
+	thisDay.setTime(840023400);
+	document.write("setTime() 메서드  : " + thisDay);
+</script>
+</body>
+</html>
